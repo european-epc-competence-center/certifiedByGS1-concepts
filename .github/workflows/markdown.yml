@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Setup Node.js environment
       uses: actions/setup-node@v1.4.2
 
@@ -20,7 +20,7 @@ jobs:
         markdown-pdf -f A4 -s assets/css/main.css CertifiedByGs1-I40.md
 
     - name: Save PDF
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: Certified-by-GS1-Concepts
         path: CertifiedByGs1-I40.pdf
@@ -32,7 +32,7 @@ jobs:
         doc: ["CertifiedByGs1-Trust", "CertifiedByGs1-PKI-Demo", "CertifiedByGs1-OnePager", "white-paper"]
         
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
 
     - name: Trust Model PDF Compilation
       uses: docker://asciidoctor/docker-asciidoctor:latest
@@ -41,7 +41,7 @@ jobs:
         args: -a icons=font -a source-highlighter=coderay ${{ matrix.doc }}.adoc
 
     - name: Save PDF
-      uses: actions/upload-artifact@v1
+      uses: actions/upload-artifact@v4
       with:
         name: Certified-by-GS1-Concepts
         path: ${{ matrix.doc }}.pdf
