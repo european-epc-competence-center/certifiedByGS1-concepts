@@ -22,7 +22,7 @@ jobs:
     - name: Save PDF
       uses: actions/upload-artifact@v4
       with:
-        name: Certified-by-GS1-Concepts
+        name: CertifiedByGs1-I40
         path: CertifiedByGs1-I40.pdf
 
   compile_adoc:
@@ -43,6 +43,6 @@ jobs:
     - name: Save PDF
       uses: actions/upload-artifact@v4
       with:
-        name: Certified-by-GS1-Concepts
+        name: ${{ matrix.doc }}
         path: ${{ matrix.doc }}.pdf
 
