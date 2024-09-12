@@ -1,4 +1,4 @@
-![PDF Compilation](https://github.com/gs1-germany-innolab/CertifiedByGS1-Konzepte/workflows/PDF%20Compilation/badge.svg)
+![PDF Compilation](https://github.com/european-epc-competence-center/certifiedByGS1-concepts/workflows/PDF%20Compilation/badge.svg)
 
 # Certified by GS1: Konzepte
 
