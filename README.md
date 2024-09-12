@@ -1,4 +1,4 @@
-![PDF Compilation](https://github.com/european-epc-competence-center/certifiedByGS1-concepts/workflows/PDF%20Compilation/badge.svg)
+[![PDF Compilation](https://github.com/european-epc-competence-center/certifiedByGS1-concepts/actions/workflows/markdown.yml/badge.svg)](https://github.com/european-epc-competence-center/certifiedByGS1-concepts/actions/workflows/markdown.yml)
 
 # Certified by GS1: Konzepte
 
